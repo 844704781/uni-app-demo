@@ -1,0 +1,188 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "我的小程序"
+			}
+		}, {
+			"path": "pages/message/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/contact/contact",
+			"style": {
+				"navigationBarTitleText": "我的信息",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/detail/detail",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/vue-demo/vue-demo",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/button-demo/button-demo",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/image-demo/image-demo",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/style-demo/style-demo",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/list/list",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true
+			}
+
+		}, {
+			"path": "pages/request/request",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/storage/storage",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/chooseImage/chooseImage",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/ifdef/ifdef",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/navigator/navigator",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white", //导航栏标题颜色，只支持dark/white
+		"navigationBarTitleText": "我的小程序", //导航栏标题
+		"navigationBarBackgroundColor": "#87CEEB", //导航栏背景颜色
+		"backgroundColor": "#87CEEB", //下拉显示出来的背景颜色
+		// "enablePullDownRefresh": true, //是否开启下拉刷新
+		"backgroundTextStyle": "light" //下拉等待组件的颜色，只支持dark/white
+
+	},
+	"tabBar": {
+		"color": "#FF6347",
+		"selectedColor": "#F0E68C",
+		"backgroundColor": "#FFFFFF",
+		"position": "bottom",
+		"list": [{
+			"text": "首页",
+			"pagePath": "pages/index/index",
+			"iconPath": "static/tabbar/home.png",
+			"selectedIconPath": "static/tabbar/home-active.png"
+		}, {
+			"text": "信息",
+			"pagePath": "pages/message/index",
+			"iconPath": "static/tabbar/message.png",
+			"selectedIconPath": "static/tabbar/message-active.png"
+		}, {
+			"text": "我的",
+			"pagePath": "pages/contact/contact",
+			"iconPath": "static/tabbar/contact.png",
+			"selectedIconPath": "static/tabbar/contact-active.png"
+		}]
+	},
+	"condition": {
+		"current": 0,
+		"list": [{
+				"name": "详情页",
+				"path": "pages/detail/detail",
+				"query": "id=1"
+			},
+			{
+				"name": "view组件演示",
+				"path": "pages/vue-demo/vue-demo",
+				"query": "id=1"
+			},
+			{
+				"name": "button组件演示",
+				"path": "pages/button-demo/button-demo",
+				"query": "id=1"
+			},
+			{
+				"name": "image组件演示",
+				"path": "pages/image-demo/image-demo",
+				"query": "id=1"
+			},
+			{
+				"name": "style演示",
+				"path": "pages/style-demo/style-demo",
+				"query": "id=1"
+			},
+			{
+				"name": "下拉刷新演示",
+				"path": "pages/list/list",
+				"query": "id=1"
+			},
+			{
+				"name": "发送请求",
+				"path": "pages/request/request",
+				"query": "id=1"
+			},
+			{
+				"name": "缓存案例",
+				"path": "pages/storage/storage",
+				"query": "id=1"
+			},
+			{
+				"name": "图片选择，图片预览案例",
+				"path": "pages/chooseImage/chooseImage",
+				"query": "id=1"
+			},
+			{
+				"name": "条件编译案例",
+				"path": "pages/ifdef/ifdef",
+				"query": "id=1"
+			},
+			{
+				"name": "路由跳转案例",
+				"path": "pages/navigator/navigator",
+				"query": "id=1"
+			}
+		]
+	}
+}
